@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "GeoPhoto",
+    "slug": "geophoto",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon-logo-padded.png",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.geophoto.app"
+    },
+    "android": {
+      "package": "com.geophoto.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/icon-logo-padded.png",
+        "monochromeImage": "./assets/icon-logo-padded.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/logo.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "GeoPhoto uses your photo library only when you choose an image to stamp.",
+          "cameraPermission": "GeoPhoto uses the camera only when you choose to take a photo.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "GeoPhoto uses foreground location only when you request your current location or ask to look up an address for selected coordinates."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "GeoPhoto uses Photos access only when you choose Save to Photos.",
+          "savePhotosPermission": "GeoPhoto saves the finished photo to your library only when you choose Save to Photos.",
+          "isAccessMediaLocationEnabled": false,
+          "granularPermissions": [
+            "photo"
+          ]
+        }
+      ],
+      "expo-sqlite",
+      "expo-sharing",
+      "expo-image",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/logo.png",
+          "imageWidth": 180,
+          "resizeMode": "contain",
+          "backgroundColor": "#F5F7F4"
+        }
+      ]
+    ]
+  }
+}

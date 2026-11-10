@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["GeoPhotoModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.mymodule.GeoPhotoModule"]
+  }
+}

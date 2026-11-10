@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+
+# Expo and Metro generated state
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p8
+*.p12
+*.mobileprovision
+*.jks
+*.keystore
+
+# Android generated files (keep the native project and source files)
+android/.gradle/
+android/.idea/
+android/.kotlin/
+android/local.properties
+android/build/
+android/app/build/
+android/app/.cxx/
+android/app/.externalNativeBuild/
+android/app/debug.keystore
+android/app/release.keystore
+
+# iOS generated files (keep the Xcode project, workspace, Pods lockfile, and source)
+ios/Pods/
+ios/build/
+ios/DerivedData/
+ios/xcuserdata/
+ios/**/*.xcuserstate
+ios/**/*.xcuserdatad/
+ios/**/*.moved-aside
+ios/**/*.hmap
+
+# Local module build products
+modules/**/build/
+
+# Native package and release artifacts
+*.apk
+*.aab
+*.ipa
+*.xcarchive/
+
+# Logs, caches, and editor/OS files
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.tsbuildinfo
+.DS_Store
+.idea/
+.vscode/
